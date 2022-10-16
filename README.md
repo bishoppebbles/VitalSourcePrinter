@@ -31,7 +31,7 @@ pip install pyautogui
 
 Create or use an existing working directory where the VitalSource software can save the printed PDF files.  Open the VitalSource Bookshelf software and open your eBook tab.  VitalSource needs to print to your desired directory so print a test page by opening the print dialog and print a 2-page PDF (or whatever is allowed) making sure to save it in the desired working directory.  Doing this will default all future print jobs to that location.  You can name this file anything you want as long as it is **not** `Ebook.pdf`.  You can delete it as well if you so desire.  Also note that your PDF printer software (e.g., Adobe Acrobat) **must not** automatically open the newly printed PDF after its creation or the script will not work.
 
-### Script Execution
+## Script Execution
 
 In the Windows cmd prompt run the script:
 
