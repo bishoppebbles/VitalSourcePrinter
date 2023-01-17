@@ -40,3 +40,7 @@ python.exe VitalSourcePrinter.py
 ```
 
 You'll be prompted for the first and last page for the range you want to print.  Enter those values.  After that you have four (4) seconds to click on your eBook in the VitalSource software and bring it into focus (i.e., the selected window).  After that don't touch your computer, especially the keyboard!  I ran this at night or while I was at work.  If you want to do this while actively using your computer forgetabout it.  Even in a VM (which is what I did) it seemed to potentially mess up.  As I said before it's a hacky solution and not a perfectly repeatable implementation.  It's also slow.  Because of some intentional delay I think VitalSource used in the print functionality this code will only print about 2 pages every 50-60 seconds.
+
+## PDF Editing
+
+I used the Linux command line `pdftk` utility to concatenate different PDF sections and then the `ghostscript` tool to compress the final file to a more reasonable size.
