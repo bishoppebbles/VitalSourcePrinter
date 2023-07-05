@@ -52,9 +52,8 @@ pdftk <file1.pdf> <file2.pdf> <file3.pdf> cat output <mergedfile.pdf>
 ```
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH -dPDFSETTINGS=<compression_settings> -sOutputFile=<out_file.pdf> <in_file.pdf>
 ```
-
-`-dPDFSETTINGS=/screen` # lower quality, smaller size (72 dpi)
-`-dPDFSETTINGS=/ebook` # better quality, but slightly larger pdfs (150 dpi)
-`-dPDFSETTINGS=/prepress` # output similar to Acrobat Distiller "Prepress Optimized" setting (300 dpi)
-`-dPDFSETTINGS=/printer` # output similar to the Acrobat Distiller "Print Optimized" setting (300 dpi)
-`-dPDFSETTINGS=/default` # output intended to be useful across a wide variety of uses, possibly at the expense of a larger output file
+* `-dPDFSETTINGS=/screen` : lower quality, smaller size (72 dpi)
+* `-dPDFSETTINGS=/ebook` : better quality, but slightly larger pdfs (150 dpi)
+* `-dPDFSETTINGS=/prepress` : output similar to Acrobat Distiller "Prepress Optimized" setting (300 dpi)
+* `-dPDFSETTINGS=/printer` : output similar to the Acrobat Distiller "Print Optimized" setting (300 dpi)
+* `-dPDFSETTINGS=/default` : output intended to be useful across a wide variety of uses, possibly at the expense of a larger output file
